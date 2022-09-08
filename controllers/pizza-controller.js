@@ -28,7 +28,7 @@ const pizzaController = {
                 path: 'comments',
                 select: '-__v'
             })
-            .select('=__v')
+            .select('-__v')
             .then(dbPizzaData => {  
                 // if no pizza is found, send 404(not found)
                 if(!dbPizzaData) {
